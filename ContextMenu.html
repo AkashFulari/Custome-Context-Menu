@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Custome Context Menu</title>
+		<link rel="stylesheet" href="ContextMenu.css">
+		<link rel="stylesheet" href="A:\akash\allFonts\mdi\css\materialdesignicons.min.css">
+	</head>
+	<body oncontextmenu="myContextMenu(event);return false;">
+		<div class="container">
+			<div class="ContextBox">
+				<ol>
+					<li><label><span class="mdi mdi-eye"></span> Preview</label></li>
+					<li><label><span></span> Open Width</label> </label><label><span class="mdi mdi-chevron-right"></span></label>
+						<div>
+							<ol>
+								<li><label><span></span> SmutraPDF</label></li>
+								<li><label><span></span> Drive Convertor</label></li>
+								<li><label><span></span> Google Docs</label></li>
+								<li><label><span></span> PDF Mgrgy</label></li>
+								<li><label><span></span> Word (Desktop)</label></li>
+							</ol>
+							<ol>
+								<li><label><span class="mdi mdi-plus"></span> Conect More Apps...</label></li>
+							</ol>
+						</div>
+					</li>
+				</ol>
+				<ol>
+					<li><label><span class="mdi mdi-account-multiple-plus-outline"></span> Share </label></li>
+					<li><label><span class="mdi mdi-attachment"></span> Get Link</label></li>
+					<li><label><span class="mdi mdi-folder-move"></span> Move to...</label></li>
+					<li><label><span class="mdi mdi-star-outline"></span> Add Star</label></li>
+					<li><label><span class="mdi mdi-rename-box"></span> Rename</label></li>
+				</ol>
+				<ol>
+					<li><label><span class="mdi mdi-delete-outline"></span> Remove </label></li>
+				</ol>
+			</div>
+		</div>	
+	</body>
+
+</html>
+<script src="ContextMenu.js"></script>

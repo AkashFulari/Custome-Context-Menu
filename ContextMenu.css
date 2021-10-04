@@ -1,0 +1,80 @@
+body,html{
+	padding:0;
+	margin:0;
+	background:#E6E6E6;
+	font-family:open sans,sans-serif;
+}
+
+.container{
+	position:fixed;
+	padding:0;
+	margin:0;
+	z-index:1001;
+	display:none;
+}
+.container .ContextBox{
+	position:relative;
+	width:250px;
+	background:white;
+	border:1px solid #e6e6e6;
+	box-shadow:3px 6px 18px -3px #ccc;
+	padding:10px 0;
+	border-radius:8px;
+}
+ol{
+	position:relative;
+	padding:0;
+	list-style-type:none;
+	margin:0;
+}
+ol:not(:last-child){
+	border-bottom:1px solid #e6e6e6;
+	margin-bottom:5px;
+}
+li{
+	position:relative;
+	padding:12px 2px;
+	display:flex;
+	font-size:14px;
+	vertical-align:center;
+	align-items:center;
+	justify-content:space-between;	
+	cursor:pointer;
+	border-left: 3px solid transparent;
+}
+li:hover{
+	background:#eee;
+	color:#555;
+	border-color: #555;
+}
+li > label{
+	position:relative;
+	display:flex;
+	vertical-align:center;
+	align-items:center;
+	justify-content:flex-start;	
+}
+li > label >span{
+	width:20px;
+	text-align:left;
+	padding:0 10px;
+}
+li div:last-child{
+	position:absolute;
+	width:250px;
+	background:white;
+	border:1px solid #e6e6e6;
+	box-shadow:3px 6px 18px -3px #ccc;
+	padding:10px 0;
+	border-radius:8px;
+	display:none;
+	z-index: 3;
+}
+.container.left li div:last-child{left:96%;}
+.container.right li div:last-child{right:96%;}
+.container.top li div:last-child{top:0%;}
+.container.bottom li div:last-child{bottom:0%;}
+
+li:hover > div:last-child{display:block;}
+
+*.mdi{font-size:18px;}
